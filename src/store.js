@@ -1,6 +1,6 @@
-'use strict';
-// eslint-disable-next-line no-unused-vars
-const store = (function(){
+
+
+
   const setError = function(error) {
     this.error = error;
   };
@@ -35,7 +35,7 @@ const store = (function(){
     this.searchTerm = term;
   };
 
-  return {
+  export default {
     items: [],
     error: null,
     hideCheckedItems: false,
@@ -51,4 +51,3 @@ const store = (function(){
     setItemIsEditing,
   };
   
-}());
